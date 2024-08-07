@@ -26,7 +26,7 @@ const CustomInput = (
       <input
         {...props}
         ref={ref}
-        className="bg-transparent border-none outline-none w-full appearance-none"
+        className="bg-transparent border-none outline-none w-full"
       />
     </div>
   );
