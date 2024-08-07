@@ -4,9 +4,12 @@ import { ArrowUpTrayIcon, BellIcon } from "@heroicons/react/24/outline";
 import Dropdown from "../dropdown";
 
 import { useState } from "react";
+import useIsMobile from "@/hooks/useIsMobile";
 
 export default function NotificationDropdown() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const isMobile = useIsMobile();
 
   return (
     <Dropdown open={isOpen} onOpenChange={setIsOpen}>
@@ -16,11 +19,16 @@ export default function NotificationDropdown() {
         </div>
       </Dropdown.Trigger>
 
-      <Dropdown.Content isOpen={isOpen} align="end" sideOffset={30} asChild>
-        <div className="w-[462px] p-3 space-y-6">
+      <Dropdown.Content
+        isOpen={isOpen}
+        align={isMobile ? "center" : "end"}
+        sideOffset={30}
+        asChild
+      >
+        <div className="lg:w-[462px] w-[300px] p-3 space-y-6">
           <div className="flex w-full items-center justify-between">
-            <p className="text-lg font-medium">Notifications</p>
-            <p className="text-sm font-medium">Mark all as read</p>
+            <p className="lg:text-lg text-base font-medium">Notifications</p>
+            <p className="lg:text-sm  text-xs font-medium">Mark all as read</p>
           </div>
           <div className="flex items-center gap-3">
             <div className="size-[70px] flex items-center justify-center bg-gradient-to-br from-violet-500 to-sky-500 rounded-xl">

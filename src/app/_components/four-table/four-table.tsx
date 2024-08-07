@@ -92,7 +92,7 @@ export default function FourTable() {
   return (
     <Container className="overflow-x-hidden py-5 space-y-3">
       <div className="flex justify-between items-center px-6 ">
-        <div className="flex gap-3 items-center">
+        <div className="flex gap-3 items-center flex-wrap">
           <h5 className="text-lg font-bold text-slate-700 dark:text-white">
             Complex Table
           </h5>

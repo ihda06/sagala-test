@@ -93,7 +93,7 @@ export default function SelectTable() {
   return (
     <Container className="overflow-x-hidden py-5 space-y-3">
       <div className="flex justify-between items-center px-6 ">
-        <div className="flex gap-3 items-center">
+        <div className="flex flex-wrap gap-3 items-center">
           <h5 className="text-lg font-bold text-slate-700 dark:text-white">
             Check Table
           </h5>

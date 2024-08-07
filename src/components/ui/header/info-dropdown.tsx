@@ -36,17 +36,20 @@ export default function InformationDropdown() {
           />
 
           <Link href={"/"}>
-            <button className="py-3 px-5 w-full text-center bg-indigo-700 hover:bg-indigo-800 text-white rounded-xl duration-200">
+            <button className="py-3 px-5 w-full text-center bg-indigo-600 font-medium hover:bg-indigo-800 text-white rounded-xl duration-200">
               Buy Horizon UI Pro
             </button>
           </Link>
           <Link href={"/"}>
-            <button className="py-3 px-5 w-full text-center border text-white hover:bg-neutral-300/55 duration-300 rounded-xl">
+            <button className="py-3 px-5 w-full text-center border border-gray-700 dark:text-white font-bold hover:bg-neutral-300/55 duration-300 rounded-xl">
               See Documentation
             </button>
           </Link>
-          <Link href={"/"} className="py-3 block px-5 w-full text-center">
-            <div>Try Horizon Free</div>
+          <Link
+            href={"/"}
+            className="py-3 block font-bold px-5 w-full text-center "
+          >
+            Try Horizon Free
           </Link>
         </div>
       </Dropdown.Content>

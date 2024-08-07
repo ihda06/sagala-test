@@ -20,7 +20,7 @@ const CustomOverlay = (
 ) => {
   return (
     <PrimitiveDrawer.Overlay
-      className={cn("absolute inset-0 z-20 bg-black/40", className)}
+      className={cn("fixed inset-0 z-20 bg-black/40", className)}
       {...props}
       ref={ref}
     />
@@ -40,7 +40,7 @@ const CustomContent = (
 ) => {
   return (
     <PrimitiveDrawer.Content
-      className={cn("w-[300px] z-50 h-screen absolute", className)}
+      className={cn("w-[300px] z-50 h-screen fixed top-0", className)}
       {...props}
       ref={ref}
     />
