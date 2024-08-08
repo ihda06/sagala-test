@@ -7,7 +7,6 @@ Project ini dapat diakses di [Sagala Test](https://sagala-test.vercel.app/)
 - [Perkenalan dan Tentang Project](#Perkenalan)
 - [Instalasi](#installation)
 - [Penggunaan](#usage)
-- [Pages](#pages)
 - [Informasi Tambahan](#informasi-tambahan)
 - [Contact Information](#contact-information)
 
